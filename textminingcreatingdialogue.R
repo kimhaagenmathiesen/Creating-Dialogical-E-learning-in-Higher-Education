@@ -100,7 +100,7 @@ person <- 1:907
 ny <-cbind(person, sortednavne.df)
 
 #Plot of individual comment distribution
-ggplot(ny, aes(x=person, y=Freq))+geom_point()
+ggplot(ny, aes(x=person, y=Freq))+geom_point()+xlab("Persons")+ylab("Comments")+ggtitle("Individuals number of comments")
 
 
 
